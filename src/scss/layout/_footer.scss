@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+/*
+  Footer
+-----------------------------------------------------*/
+.l-footer {
+  clear: both;
+  padding: set-size(40px) 0;
+
+  @include mq(tab) {
+    padding: set-size(80px) 0;
+  }
+}

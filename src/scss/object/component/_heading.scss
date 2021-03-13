@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+/*
+  Heading
+*/
+.c-heading__primary {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: set-size(24px);
+  }
+
+@include mq(tab) {
+  .c-heading__primary {
+      margin-bottom: set-size(64px);
+    }
+  }
