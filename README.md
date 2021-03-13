@@ -28,7 +28,7 @@ sudo npm install
 
 個別にインストール
 ```
-npm install --save-dev gulp gulp-sass gulp-sourcemaps gulp-notify gulp-plumber gulp-postcss postcss-cssnext gulp-clean-css gulp-rename gulp-imagemin imagemin-mozjpeg imagemin-pngquant imagemin-svgo @babel/core @babel/preset-env gulp-babel gulp-uglify browser-sync css-mqpacker rimraf
+npm install --save-dev gulp gulp-sass gulp-sourcemaps gulp-notify gulp-plumber gulp-postcss postcss-cssnext gulp-clean-css gulp-rename gulp-imagemin imagemin-mozjpeg imagemin-pngquant imagemin-svgo @babel/core @babel/preset-env gulp-babel gulp-concat gulp-uglify browser-sync css-mqpacker rimraf
 ```
 
 ## gulp 実行

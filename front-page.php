@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <link href="http://dummyarchitects.local/wp-content/themes/dummy-architects/dist/css/main.css" rel="stylesheet">
-        <!-- facebookのOGPタグ -->
-        <meta property="og:site_name" content="Dummy Architects" />
-        <meta property="og:url" content="" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Dummy Architects" />
-        <meta property="og:description" content=""/>
-        <meta property="og:image" content="サムネイル画像URL" />
-        <meta property="fb:app_id" content="xxx" />
-        <meta property="og:locale" content="ja_JP" />
-        <!-- twitterのOGPタグ -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@xxx" />
-        <meta name="twitter:description" content="" />
-        <meta name="twitter:image:src" content="" />
-        <title>タイトル</title>
-    </head>
-    <body>
-        <header>
-        </header>
-        <main>
-            <div>
-            </div>
-            <section>
-            </section>
-        </main>
-        <footer>
-        </footer>
-        <script src="http://dummyarchitects.local/wp-content/themes/dummy-architects/dist/js/main.min.js"></script>
-    </body>
+<head>
+    <?php get_header(); ?>
+</head>
+<body>
+   <?php get_template_part('includes/header'); ?>
+    <main>
+        <div class="wrapper">//全体のラッパー（画像を囲むdivタグの調整用）
+            <ul id="slide_wrapper">//スライドのラッパー
+                <li class="slide_items">//スライド画像を挟み込むliタグ
+                    <img src="http://hiro-contribution.com/wp-content/uploads/2020/01/2020-01-03-1711.jpg" alt="" width="640" height="427" class="alignnone size-full wp-image-340" />
+                </li>
+                <li class="slide_items">
+                    <img src="http://hiro-contribution.com/wp-content/uploads/2020/01/2020-01-03-1713.jpg" alt="" width="640" height="427" class="alignnone size-full wp-image-341" />
+                </li>
+                <li class="slide_items">
+                    <img src="http://hiro-contribution.com/wp-content/uploads/2020/01/2020-01-03-1714.jpg" alt="" width="640" height="427" class="alignnone size-full wp-image-342" />
+                </li>
+            </ul>
+        </div>
+        <section class="l-section ">
+            <h2>AboutUs</h2>
+        </section>
+        <section class="l-section">
+            <h2>Works</h2>
+        </section>
+        <section class="l-section">
+            <h2>News</h2>
+        </section>
+        <section class="l-section">
+            <h2>Access</h2>
+        </section>
+    </main>
+    
+    <?php get_template_part('includes/footer'); ?>
+    <?php get_footer(); ?>
+</body>
 </html>

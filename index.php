@@ -8,12 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    <p class="text">
-        text
-        <?php
-           echo "text";
-        ?>
-    </p>
     
 </body>
 </html>
