@@ -11,8 +11,9 @@ const rename = require("gulp-rename"); // ファイル名変更
 const sourcemaps = require("gulp-sourcemaps"); // ソースマップ作成
 const mqpacker = require('css-mqpacker'); //メディアクエリをまとめる
 
-//js babel
+//js
 const babel = require("gulp-babel");
+const concat = require('gulp-concat');
 const uglify = require("gulp-uglify");
 
 //画像圧縮
@@ -57,69 +58,37 @@ const destPath = {
 const cssSass = () => {
     return src(srcPath.css) //コンパイル元
         .pipe(sourcemaps.init()) //gulp-sourcemapsを初期化
-        .pipe(
-            plumber( //エラーが出ても処理を止めない
-                {
-                    errorHandler: notify.onError('Error:<%= error.message %>')
-                        //エラー出力設定
-                }
-            )
-        )
+        .pipe(plumber({ errorHandler: notify.onError('Error:<%= error.message %>') })) //エラー出力設定
         .pipe(sass({ outputStyle: 'expanded' }))
         .pipe(postcss([mqpacker()])) // メディアクエリを圧縮
         .pipe(postcss([cssnext(browsers)])) //cssnext
         .pipe(sourcemaps.write('/maps')) //ソースマップの出力
         .pipe(dest(destPath.css)) //コンパイル先
         .pipe(cleanCSS()) // CSS圧縮
-        .pipe(
-            rename({
-                extname: '.min.css' //.min.cssの拡張子にする
-            })
-        )
+        .pipe(rename({ extname: '.min.css' })) //.min.cssの拡張子にする
 }
 
 
-// babelのトランスパイル、jsの圧縮
-const jsBabel = () => {
+// js
+const scriptJs = () => {
     return src(srcPath.js)
-        .pipe(
-            plumber( //エラーが出ても処理を止めない
-                {
-                    errorHandler: notify.onError('Error: <%= error.message %>')
-                }
-            )
-        )
-        .pipe(babel({
-            presets: ['@babel/preset-env'] // gulp-babelでトランスパイル
-        }))
+        .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
+        .pipe(babel({ presets: ['@babel/preset-env'] }))
         .pipe(dest(destPath.js))
+        .pipe(concat('main.js')) // ファイル結合
         .pipe(uglify()) // js圧縮
-        .pipe(
-            rename({ extname: '.min.js' })
-        )
+        .pipe(rename({ extname: '.min.js' }))
         .pipe(dest(destPath.js))
 }
 
 //画像圧縮（デフォルトの設定）
 const imgImagemin = () => {
     return src(srcPath.img)
-        .pipe(
-            imagemin(
-                [
-                    imageminMozjpeg({
-                        quality: 80
-                    }),
-                    imageminPngquant(),
-                    imageminSvgo({
-                        plugins: [{
-                            removeViewbox: false
-                        }]
-                    })
-                ], {
-                    verbose: true
-                }
-            )
-        )
+        .pipe(imagemin([
+            imageminMozjpeg({ quality: 80 }),
+            imageminPngquant(),
+            imageminSvgo({ plugins: [{ removeViewbox: false }] })
+        ], { verbose: true }))
         .pipe(dest(destPath.img))
 }
 
@@ -143,11 +112,11 @@ const browserSyncReload = (done) => {
 //ファイル監視
 const watchFiles = () => {
     watch(srcPath.css, series(cssSass, browserSyncReload))
-    watch(srcPath.js, series(jsBabel, browserSyncReload))
+    watch(srcPath.js, series(scriptJs, browserSyncReload))
     watch(srcPath.img, series(imgImagemin, browserSyncReload))
     watch(srcPath.php, series(browserSyncReload))
     watch(srcPath.html, series(browserSyncReload))
 }
 
-exports.default = series(series(cssSass, jsBabel, imgImagemin), parallel(watchFiles, browserSyncFunc));
-exports.build = series(cssSass, jsBabel, imgImagemin);
+exports.default = series(series(cssSass, scriptJs, imgImagemin), parallel(watchFiles, browserSyncFunc));
+exports.build = series(cssSass, scriptJs, imgImagemin);
