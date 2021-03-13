@@ -1,4 +1,4 @@
-# gulptemplate
+# Dummy Architects
 
 ## npm 初期化
 
@@ -50,31 +50,7 @@ $ npm run start
 
 ## buildタスクの実行
 
-・distディレクトリの中身を全てクリーンにする
-・サーバー立ち上げはせず、必要なファイルを全てコンパイルもしくは画像圧縮し直す
-
-rimrafを入れる
-
 
 ```
 $ npm run build
 ```
-
-制作段階で蓄積されたファイル（もう使わない可能性のあるファイルも存在するかもしれないので）を一旦削除し、
-今一度最新の環境でコンパイル＆画像圧縮したものを生成するという流れ
-
-
-npm scriptは、
-packege.jsonのscriptに記載する
-
-
-```
-  "scripts": {
-  "clean": "rimraf dist/**/*",
-  "start": "gulp",
-  "build": "npm run clean && gulp build"
-  },
-```
-
-rimrafのclean`dist`に出力してあるファイルを一旦全て削除。
-buildでコンパイル、画像圧縮して再生成
