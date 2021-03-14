@@ -3,3 +3,16 @@
 /*
   Hero
 */
+
+.p-heroTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.p-heroTitle__text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 13vw;
+}

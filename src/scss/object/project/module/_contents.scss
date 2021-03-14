@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+
+/*
+  Background Image Fixed
+*/
+
+.p-fixedBackground.--primary {
+    background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/top_aboutus.jpg');
+}
+
+.p-fixedBackground.--secondary {
+    background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/top_works.jpg');
+}
+
+.p-fixedBackground {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+
+/*
+  News
+*/
+
+.p-topNewsWrap {
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+}
+
+.p-topNewsWrap:last-of-type {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/*
+  Top News
+*/
+
+.p-map {
+    width: 100%;
+    height: 600px;
+}
