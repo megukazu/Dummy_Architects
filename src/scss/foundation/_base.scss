@@ -9,7 +9,6 @@
 }
 
 body {
-    background-color: #fff;
     color: $primary-text-color;
     font-family: $font-set-primary;
 }
@@ -25,7 +24,7 @@ img {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: $primary-text-color;
     transition: background-color .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out, transform .3s ease-in-out, opacity .3s ease-in-out;
     &:before,
     &:after {
