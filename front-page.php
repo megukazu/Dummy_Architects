@@ -21,6 +21,7 @@
                 </div>
             </div>
             <div class="p-heroTitle">
+                <h1 class="p-heroTitle__text">Dummy<br>Architects</h1>
                 <p class="p-heroTitle__caption">テストテストテストテストテストテストテストテストテストテストテスト</p>
             </div>
         </div>
