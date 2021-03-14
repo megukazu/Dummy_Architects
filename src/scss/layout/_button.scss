@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+/*
+  Basic button
+*/
+
+.l-button {
+    text-align: center;
+    margin-top: set-size(48px);
+}
+
+@include mq(tab) {
+    .l-button {
+        margin-top: set-size(64px);
+    }
+}

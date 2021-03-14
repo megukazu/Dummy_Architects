@@ -4,35 +4,15 @@
   Hero
 */
 
-.wrapper {
-    padding: 16px; //パディング設定。ここは不要と言えば不要かも。
-    margin: 0 auto; //marginのtopとbottomを0設定。左右をauto設定。
-    width: 87%; //widthは画像のサイズに合わせて今回は87%にしています。ズームアップ。どれだけズームアップするかで調整が必要。ズームアップの際に余白が
-    //生まれてしまいます。
-}
-
-#slide_wrapper {
-    position: relative; //スライドのラッパーの配置を設定。あとで2枚目以降でposition:absolute;を設定するための準備。
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-#slide_wrapper .slide_items {
-    opacity: 0;
-    transition: opacity 2s linear, transform 7.5s linear;
-    position: relative;
-}
-
-#slide_wrapper .slide_items:not(:first-child) {
+.p-heroTitle {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#slide_wrapper .slide_items.show {
-    opacity: 1;
-}
-
-#slide_wrapper .slide_items.zoom {
-    transform: scale(1.3);
+.p-heroTitle__text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 13vw;
 }

@@ -74,8 +74,8 @@ const scriptJs = () => {
     return src(srcPath.js)
         .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
         .pipe(babel({ presets: ['@babel/preset-env'] }))
-        .pipe(dest(destPath.js))
         .pipe(concat('main.js')) // ファイル結合
+        .pipe(dest(destPath.js))
         .pipe(uglify()) // js圧縮
         .pipe(rename({ extname: '.min.js' }))
         .pipe(dest(destPath.js))

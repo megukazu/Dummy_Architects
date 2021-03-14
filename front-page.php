@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <?php get_header(); ?>
 </head>
+
 <body>
-   <?php get_template_part('includes/header'); ?>
+    <?php get_template_part('includes/header'); ?>
     <main>
-        <div class="wrapper">//全体のラッパー（画像を囲むdivタグの調整用）
-            <ul id="slide_wrapper">//スライドのラッパー
-                <li class="slide_items">//スライド画像を挟み込むliタグ
-                    <img src="http://hiro-contribution.com/wp-content/uploads/2020/01/2020-01-03-1711.jpg" alt="" width="640" height="427" class="alignnone size-full wp-image-340" />
-                </li>
-                <li class="slide_items">
-                    <img src="http://hiro-contribution.com/wp-content/uploads/2020/01/2020-01-03-1713.jpg" alt="" width="640" height="427" class="alignnone size-full wp-image-341" />
-                </li>
-                <li class="slide_items">
-                    <img src="http://hiro-contribution.com/wp-content/uploads/2020/01/2020-01-03-1714.jpg" alt="" width="640" height="427" class="alignnone size-full wp-image-342" />
-                </li>
-            </ul>
+        <div class="swiper-container p-hero">
+            <div class="swiper-wrapper p-hero_thumbnail">
+                <div class="swiper-slide">
+                    <div class="slide-img" style="background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/hero1.jpg');"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img" style="background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/hero2.jpg');"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img" style="background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/hero3.jpg');"></div>
+                </div>
+            </div>
+            <div class="p-heroTitle">
+                <p class="p-heroTitle__caption">テストテストテストテストテストテストテストテストテストテストテスト</p>
+            </div>
         </div>
-        <section class="l-section ">
-            <h2>AboutUs</h2>
+        <section class="l-section p-fixedBackground --primary">
+            <div class="l-container__middle --vertical">
+                <h2 class="c-heading__primary">AboutUs</h2>
+                <p class="c-contents__text">テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+                <p class="l-button"><a class="c-button p-button" href="">Read More</a></p>
+            </div>
+        </section>
+        <section class="l-section p-fixedBackground --secondary">
+            <div class="l-container__middle --vertical">
+                <h2 class="c-heading__primary">Works</h2>
+                <p class="c-contents__text">テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>   
+                <p class="l-button"><a class="c-button p-button" href="">Read More</a></p>
+            </div>
         </section>
         <section class="l-section">
-            <h2>Works</h2>
+            <div class="l-container__middle">
+                <h2 class="c-heading__primary">News</h2>
+                <article class="p-topNewsWrap">
+                    <p class="c-date__primary">2021年1月1日</p>
+                    <p class="c-contents__text">テストテストテストテストテストテストテストテストテス</p>
+                </article>
+                <article class="p-topNewsWrap">
+                    <p class="c-date__primary">2021年1月1日</p>
+                    <p class="c-contents__text">テストテストテストテストテストテストテストテストテス</p>
+                </article>
+                <article class="p-topNewsWrap">
+                    <p class="c-date__primary">2021年1月1日</p>
+                    <p class="c-contents__text">テストテストテストテストテストテストテストテストテス</p>
+                </article>
+                <p class="l-button"><a class="c-button p-button" href="">Read More</a></p>
+            </div>
         </section>
-        <section class="l-section">
-            <h2>News</h2>
-        </section>
-        <section class="l-section">
-            <h2>Access</h2>
-        </section>
+
+        <?php get_template_part('includes/footer'); ?>
+        <?php get_footer(); ?>
     </main>
-    
-    <?php get_template_part('includes/footer'); ?>
-    <?php get_footer(); ?>
 </body>
+
 </html>

@@ -1,9 +1,27 @@
 @charset 'UTF-8';
+
 /*
   Centering
 -----------------------------------------------------*/
-.l-container {
-  margin: 0 auto;
-  max-width: $content-width;
-  width: 90%;
+
+.l-container__full {
+    margin: 0 auto;
+    max-width: $content-width-full;
+    width: 90%;
+}
+
+.l-container__middle {
+    padding: 5rem 0;
+    margin: 0 auto;
+    max-width: $content-width-middle;
+    width: 90%;
+}
+
+.l-container__middle.--vertical {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: $content-width-middle;
+    width: 90%;
 }

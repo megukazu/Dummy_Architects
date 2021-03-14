@@ -3,3 +3,34 @@
 /*
   Global-nav
 */
+
+.p-globalNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding-top: set-size(64px);
+    background-color: #fff;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.p-globalNav li a {
+    display: block;
+    padding: set-size(36px);
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: set-size(24px);
+    transition: all .3s ease-in-out;
+}
+
+.p-globalNav li a:hover {
+    color: #ccc;
+}
+
+.is-active-drawer .p-globalNav {
+    visibility: visible;
+    opacity: 1;
+}

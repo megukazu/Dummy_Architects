@@ -2,7 +2,8 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<link href="http://dummyarchitects.local/wp-content/themes/dummy-architects/dist/css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/css/main.css" rel="stylesheet">
 <!-- facebookのOGPタグ -->
 <meta property="og:site_name" content="Dummy Architects" />
 <meta property="og:url" content="" />
@@ -17,5 +18,5 @@
 <meta name="twitter:site" content="@xxx" />
 <meta name="twitter:description" content="" />
 <meta name="twitter:image:src" content="" />
-<title>タイトル</title>
+<title>Dummy Architects</title>
 <?php wp_head(); ?>
