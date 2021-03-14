@@ -11,21 +11,21 @@ $breakpoints: ( 'sp': 480px, 'tab': 768px, 'lap': 1024px, 'desk': 1200px, 'vr': 
 //  Color Setings
 //====================================
 // メインカラー
-$main-color: #3a86b3;
+$main-color: #fff;
 // サブカラー
-$sub-color: #365f77;
+$sub-color: #f7f7f7;
 //　アクセントカラー
-$accent-color: #e0d96b;
+$accent-color: #212121;
 // テキストの色
 $primary-text-color: #212121;
 // セカンダリーカラー
-$secondary-text-color: #666;
+$secondary-text-color: #fff;
 // 補足などの色
-$hint-text-color: #999;
+$hint-text-color: #ccc;
 //====================================
 //  Typeface
 //====================================
-$font-set-primary: 'Noto Sans Japanese',
+$font-set-primary: 'Roboto',
 '游ゴシック',
 'Yu Gothic',
 '游ゴシック体',

@@ -8,9 +8,9 @@
     display: inline-block;
     margin: 0 auto;
     width: 200px;
-    background-color: #000;
+    background-color: $accent-color;
     padding: 1rem 0;
-    color: #fff;
+    color: $secondary-text-color;
     text-align: center;
 }
 
@@ -40,7 +40,7 @@
     margin: auto;
     width: 18px;
     height: 2px;
-    background-color: #263238;
+    background-color: $accent-color;
 }
 
 .p-button--hamburger__line:before,
@@ -69,7 +69,7 @@
 .is-active-drawer .p-button--hamburger__line:before,
 .is-active-drawer .p-button--hamburger__line:after {
     top: 0;
-    background-color: #212121;
+    background-color: $accent-color;
 }
 
 .is-active-drawer .p-button--hamburger__line:before {
