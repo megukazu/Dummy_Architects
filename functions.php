@@ -26,7 +26,7 @@ add_action( 'after_setup_theme', 'init_setup' );
  */
 function menu_setup() {
     register_nav_menus( array(
-      'global'  => 'グローバルメニュー',
+      'place_global'  => 'グローバルメニュー',
     ) );
   }
   add_action( 'init', 'menu_setup' );

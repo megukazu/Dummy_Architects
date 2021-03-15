@@ -3,3 +3,11 @@
 /*
   Heading
 */
+
+.p-heading__primary {
+    font-size: 2.5rem;
+}
+
+.p-heading__primary.--center {
+    text-align: center;
+}
