@@ -51,6 +51,21 @@
 
 
 /*
+  WordPress
+*/
+
+// 投稿画像の縦横比を保持
+.wp-block-image img,
+.wp-block-media-text__media img {
+    height: 100%;
+}
+
+.wp-block-media-text .wp-block-media-text__content {
+    padding: 0;
+}
+
+
+/*
   screen-reader-text
 */
 

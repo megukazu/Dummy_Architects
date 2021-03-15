@@ -22,7 +22,7 @@
 .p-button--hamburger {
     position: absolute;
     top: 12px;
-    right: 2.5%;
+    right: 5%;
     z-index: 1;
     margin: auto 0;
     width: 24px;
@@ -38,7 +38,7 @@
     left: 0;
     display: block;
     margin: auto;
-    width: 18px;
+    width: 24px;
     height: 2px;
     background-color: $accent-color;
 }

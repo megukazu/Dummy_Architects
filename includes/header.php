@@ -11,13 +11,14 @@
               </span>
             </button>
             <ul id="global-nav" class="p-globalNav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">AboutUs</a></li>
-              <li><a href="#">Works</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Contact</a></li>
+                <?php wp_nav_menu( array(
+                  'theme_location'=>'place_global', 
+                  'container'     =>'', 
+                  'menu_class'    =>'',
+                  'items_wrap' => '%3$s',//<ul>を出力しない
+                ));
+              ?>
             </ul>
-
         </nav>
     </div>
 </header>
