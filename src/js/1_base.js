@@ -4,4 +4,5 @@ window.addEventListener("load", () => {
     // const hero = new HeroSlider('.swiper-container', 2000, 4000);
     // hero.start();
     new HamburgerButton('.js-button-hamburger');
+    new FormLabelFloat('.js-input');
 });
