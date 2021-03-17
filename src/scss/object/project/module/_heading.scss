@@ -5,9 +5,14 @@
 */
 
 .p-heading__primary {
-    font-size: 2.5rem;
+    font-size: set-size(40px);
 }
 
 .p-heading__primary.--center {
     text-align: center;
+}
+
+.p-heading__news {
+    font-size: set-size(20px);
+    margin-bottom: set-size(16px);
 }
