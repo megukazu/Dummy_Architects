@@ -27,32 +27,32 @@
         </div>
         <section class="l-section p-fixedBackground --primary">
             <div class="l-container__middle --vertical">
-                <h2 class="c-heading__primary">AboutUs</h2>
+                <h2 class="p-heading__primary">AboutUs</h2>
                 <p class="c-contents__text">テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
                 <p class="l-button"><a class="c-button p-button" href="">Read More</a></p>
             </div>
         </section>
         <section class="l-section p-fixedBackground --secondary">
             <div class="l-container__middle --vertical">
-                <h2 class="c-heading__primary">Works</h2>
-                <p class="c-contents__text">テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>   
+                <h2 class="p-heading__primary">Works</h2>
+                <p class="c-contents__text">テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
                 <p class="l-button"><a class="c-button p-button" href="">Read More</a></p>
             </div>
         </section>
         <section class="l-section">
             <div class="l-container__middle">
-                <h2 class="c-heading__primary">News</h2>
-                <article class="p-topNewsWrap">
-                    <p class="c-date__primary">2021年1月1日</p>
-                    <p class="c-contents__text">テストテストテストテストテストテストテストテストテス</p>
+                <h2 class="p-heading__primary --center">News</h2>
+                <article class="p-article --primary">
+                    <p class="c-contents__title">テストテストテストテストテストテストテストテストテス</p>
+                    <p class="p-date__primary --right">2021年1月1日</p>
                 </article>
-                <article class="p-topNewsWrap">
-                    <p class="c-date__primary">2021年1月1日</p>
-                    <p class="c-contents__text">テストテストテストテストテストテストテストテストテス</p>
+                <article class="p-article --primary">
+                    <p class="c-contents__title">テストテストテストテストテストテストテストテストテス</p>
+                    <p class="p-date__primary --right">2021年1月1日</p>
                 </article>
-                <article class="p-topNewsWrap">
-                    <p class="c-date__primary">2021年1月1日</p>
-                    <p class="c-contents__text">テストテストテストテストテストテストテストテストテス</p>
+                <article class="p-article --primary">
+                    <p class="c-contents__title">テストテストテストテストテストテストテストテストテス</p>
+                    <p class="p-date__primary --right">2021年1月1日</p>
                 </article>
                 <p class="l-button"><a class="c-button p-button" href="">Read More</a></p>
             </div>

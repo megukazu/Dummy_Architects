@@ -1,16 +1,4 @@
-/*
-  Section
-*/
-
-*/ .p-section {
-    margin-top: 5rem;
-}
-
-
-/*
-  Background Image Fixed
-*/
-
+@charset 'UTF-8';
 .p-fixedBackground.--primary {
     background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/top_aboutus.jpg');
 }
@@ -36,16 +24,20 @@
 
 
 /*
-  News
+  article
 */
 
-.p-topNewsWrap {
-    padding: 1rem 0;
+.p-article.--primary {
+    padding: set-size(16px) 0;
     border-top: 1px solid #ddd;
 }
 
-.p-topNewsWrap:last-of-type {
+.p-article.--primary:last-of-type {
     border-bottom: 1px solid #ddd;
+}
+
+.p-contents__block {
+    margin-top: set-size(48px);
 }
 
 
@@ -54,24 +46,24 @@
 */
 
 .p-defineList dt {
-    margin-top: 2em;
-    font-size: .75em;
+    margin-top: set-size(32px);
+    font-size: set-size(12px);
 }
 
 .p-defineList dd {
-    margin-top: 1em;
-    font-size: .75em;
+    margin-top: set-size(16px);
+    font-size: set-size(12px);
 }
 
 .p-defineNews dt {
     float: left;
     clear: left;
     padding: 1em;
-    width: 120px;
+    width: set-size(120px);
 }
 
 .p-defineNews dd {
-    padding: 1em 0 1em 120px;
+    padding: set-size(16px) 0 1em set-size(120px);
     border-bottom: 1px solid #ddd;
     line-height: 1.5;
 }
@@ -105,12 +97,12 @@
     }
     .p-defineList dd {
         margin: 0;
-        padding: 1em;
-        font-size: 1em;
+        padding: set-size(16px);
+        font-size: set-size(16px);
     }
     .p-defineList dt:after {
         display: block;
-        margin-right: 2em;
+        margin-right: set-size(32px);
         max-width: 50%;
         width: 100%;
         border-bottom: 1px dashed #212121;
@@ -125,11 +117,11 @@
 
 .p-form__row {
     position: relative;
-    margin-top: 3rem;
+    margin-top: set-size(48px);
 }
 
 .p-form__row:last-of-type {
-    margin-top: 5rem;
+    margin-top: set-size(80px);
 }
 
 .p-form__item {
@@ -156,7 +148,7 @@
 }
 
 .c-textarea {
-    margin-top: 1rem;
+    margin-top: set-size(16px);
 }
 
 .c-textarea textarea {
@@ -164,11 +156,54 @@
     appearance: none;
     border: 1px solid #ddd;
     width: 100%;
-    height: 10rem;
+    height: set-size(160px);
 }
 
 .is-float .p-form__label {
     top: -15px;
     color: #666;
     transform: scale(.66);
+}
+
+
+/*
+  Date
+*/
+
+.p-date__primary {
+    font-size: set-size(12px);
+    color: $hint-text-color;
+}
+
+.p-date__primary.--right {
+    text-align: right;
+    margin-top: set-size(16px);
+}
+
+.p-date__primary.--inlineBlock {
+    display: inline-block;
+}
+
+.p-category.--inlineBlock {
+    display: inline-block;
+    margin-left: set-size(16px);
+}
+
+
+/*
+  Label
+*/
+
+.c-content__label {
+    margin-bottom: 1rem;
+    font-size: set-size(12px);
+}
+
+
+/*
+ news
+*/
+
+.p-section.--heroless {
+    padding-top: set-size(48px);
 }

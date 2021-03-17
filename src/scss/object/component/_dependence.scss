@@ -67,6 +67,22 @@
 
 
 /*
+  Pagination
+*/
+
+.nav-links {
+    margin-top: set-size(32px);
+    text-align: center;
+}
+
+.page-numbers {
+    display: inline-block;
+    background-color: $hint-text-color;
+    padding: set-size(12px) set-size(16px);
+}
+
+
+/*
   screen-reader-text
 */
 

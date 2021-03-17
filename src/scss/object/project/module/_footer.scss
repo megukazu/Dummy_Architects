@@ -5,7 +5,7 @@
 */
 
 .p-footer {
-    margin-top: 4rem;
+    margin-top: set-size(64px);
     padding: set-size(40px) 0;
     background-color: $sub-color;
     text-align: center;
@@ -16,19 +16,19 @@
 
 .p-footer__title {
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: set-size(32px);
 }
 
 .p-footer__address {
-    font-size: .75rem;
-    margin-bottom: .5rem;
+    font-size: set-size(12px);
+    margin-bottom: set-size(8px);
 }
 
 .p-footer__tel {
-    font-size: .75rem;
-    margin-bottom: 2rem;
+    font-size: set-size(12px);
+    margin-bottom: set-size(32px);
 }
 
 .p-footer__copyright {
-    font-size: .75rem;
+    font-size: set-size(12px);
 }
