@@ -21,37 +21,42 @@
                 </div>
             </div>
             <div class="p-heroTitle">
-                <h1 class="p-heroTitle__text">Dummy<br>Architects</h1>
-                <p class="p-heroTitle__caption">テストテストテストテストテストテストテストテストテストテストテスト</p>
+                <h1 class="p-heading__primary --center">Dummy<br>Architects</h1>
             </div>
         </div>
         <section class="l-section p-fixedBackground --primary">
             <div class="l-container__middle --vertical">
-                <h2 class="p-heading__primary">AboutUs</h2>
-                <p class="c-contents__text">テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+                <h2 class="p-heading__primary --center">AboutUs</h2>
+                <p class="p-contents__text">
+                    お客さまの課題を解決しご要望におこたえします。<br>
+                    ときにいやされ、ときにワクワクする、お客様だけの空間を提供します。
+                </p>
                 <p class="l-button"><a class="c-button p-button" href="">Read More</a></p>
             </div>
         </section>
         <section class="l-section p-fixedBackground --secondary">
             <div class="l-container__middle --vertical">
-                <h2 class="p-heading__primary">Works</h2>
-                <p class="c-contents__text">テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+                <h2 class="p-heading__primary --center">Works</h2>
+                <p class="p-contents__text">
+                    施工実績をご覧ください。<br>
+                    家具のご相談やインテリアのデザインについてもご相談ください。
+                </p>
                 <p class="l-button"><a class="c-button p-button" href="">Read More</a></p>
             </div>
         </section>
         <section class="l-section">
             <div class="l-container__middle">
                 <h2 class="p-heading__primary --center">News</h2>
-                <article class="p-article --primary">
-                    <p class="c-contents__title">テストテストテストテストテストテストテストテストテス</p>
+                <article class="p-article --border">
+                    <p class="p-contents__title">テストテストテストテストテストテストテストテストテス</p>
                     <p class="p-date__primary --right">2021年1月1日</p>
                 </article>
-                <article class="p-article --primary">
-                    <p class="c-contents__title">テストテストテストテストテストテストテストテストテス</p>
+                <article class="p-article --border">
+                    <p class="p-contents__title">テストテストテストテストテストテストテストテストテス</p>
                     <p class="p-date__primary --right">2021年1月1日</p>
                 </article>
-                <article class="p-article --primary">
-                    <p class="c-contents__title">テストテストテストテストテストテストテストテストテス</p>
+                <article class="p-article --border">
+                    <p class="p-contents__title">テストテストテストテストテストテストテストテストテス</p>
                     <p class="p-date__primary --right">2021年1月1日</p>
                 </article>
                 <p class="l-button"><a class="c-button p-button" href="">Read More</a></p>

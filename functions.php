@@ -78,7 +78,7 @@ function works_post()
 		'public' => true,
 		'menu_position' => 5,
 		'menu_icon' => 'dashicons-building',
-		'supports' => ['thumbnail', 'title', 'editor', 'page-attributes', 'custom-fields'],
+		'supports' => ['thumbnail', 'title', 'editor', 'page-attributes'],
 		'has_archive' => true,
 		'hierarchical' => true,
 		'show_in_rest' => true,

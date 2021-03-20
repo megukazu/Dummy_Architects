@@ -1,3 +1,11 @@
 /*
   Section
 */
+
+.l-section {
+    padding-top: set-size(48px);
+}
+
+.l-section.--heroLess {
+    padding-top: set-size(120px);
+}

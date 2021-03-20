@@ -8,9 +8,9 @@
 <body>
     <?php get_template_part('includes/header'); ?>
     <main>
-        <section class="l-section p-section --heroless">
+        <section class="l-section --heroLess">
             <div class="l-container__middle">
-                <h2 class="p-heading__news"> <?php the_title(); ?></h2>
+                <h2 class="p-heading__secondary --center"> <?php the_title(); ?></h2>
                 <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
                         <article class="p-article --single">
@@ -21,28 +21,27 @@
                             <?php $completion = SCF::get('completion'); ?>
                             <?php $method = SCF::get('method'); ?>
                             <?php $images = SCF::get('image'); ?>
-                            <p class="p-contents__block">
+                            <div class="p-contents__text">
                                 <?php the_content(); ?>
-                            </p>
-                            <dl>
+                            </div>
+                            <dl class="p-defineList --dottedLine">
                                 <dt>敷地面積</dt>
-                                <dd><?php echo esc_html($siteArea); ?>m2</dd>
-                                <dd>(<?php echo esc_html($siteAreaTubo); ?>坪)</dd>
+                                <dd><?php echo esc_html($siteArea); ?>m2(<?php echo esc_html($siteAreaTubo); ?>坪)</dd>
                                 <dt>延床面積</dt>
-                                <dd><?php echo esc_html($areaFloor); ?>m2</dd>
-                                <dd>(<?php echo esc_html($areaFloorTubo); ?>坪)</dd>
+                                <dd><?php echo esc_html($areaFloor); ?>m2(<?php echo esc_html($areaFloorTubo); ?>坪)</dd>
                                 <dt>竣工年月</dt>
                                 <dd><?php echo esc_html($completion); ?>年</dd>
                                 <dt>工法</dt>
                                 <dd><?php echo esc_html($method); ?></dd>
-                                <ul>
-                                    <?php foreach ($images as $image) : ?>
-                                        <li><?php echo wp_get_attachment_image($image, 'large'); ?></li>
-                                    <?php endforeach; ?>
-                                </ul>
-
-
                             </dl>
+                            <div class="p_contents__thumbnail">
+                                <?php foreach ($images as $image) : ?>
+                                    <p><?php echo wp_get_attachment_image($image, 'large'); ?> </p>
+                                <?php endforeach; ?>
+                            </div>
+
+
+
 
                         </article>
                     <?php endwhile; ?>

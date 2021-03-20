@@ -10,33 +10,27 @@
     <main>
         <section class="l-section p-fixedBackground --aboutus">
             <div class="l-container__middle --vertical">
-                <h2 class="p-heading__primary">About Us</h2>
+                <h2 class="p-heading__primary --center">About Us</h2>
             </div>
         </section>
-
         <section class="l-section p-section">
             <div class="l-container__full">
-
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                         <?php the_content(); ?>
                 <?php endwhile;
                 endif; ?>
             </div>
         </section>
-        <section class="l-section p-section">
-            <div class="l-container__full">
-            </div>
-        </section>
         <section class="l-section">
             <div class="l-container__full">
                 <h2 class="p-heading__primary --center" id="overview">OVERVIEW</h2>
-                <dl class="p-defineList">
+                <dl class="p-defineList --dottedLine">
                     <dt>会社名</dt>
                     <dd>株式会社 Dummy Architects</dd>
                     <dt>所在地</dt>
                     <dd>東京都架空市架空町1-1-1</dd>
                     <dt>設立</dt>
-                    <dd><time datetime="2019-08-24">2019年8月24日</time></dd>
+                    <dd><time datetime="2010-08-24">2010年8月24日</time></dd>
                     <dt>資本金</dt>
                     <dd>1,000万円</dd>
                     <dt>従業員数</dt>
