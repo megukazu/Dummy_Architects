@@ -10,7 +10,7 @@
     <main>
         <section class="l-section p-fixedBackground --aboutus">
             <div class="l-container__middle --vertical">
-                <h2 class="p-heading__primary">News</h2>
+                <h2 class="p-heading__primary --center">News</h2>
             </div>
         </section>
 
@@ -18,13 +18,13 @@
             <div class="l-container__middle">
                 <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
-                        <article class="p-article --primary">
+                        <article class="p-article --border">
                             <ul>
-                                <li class="c-content__label">
+                                <li class="p-contents__label">
                                     <?php the_category('$nbsp'); ?>
                                 </li>
                             </ul>
-                            <p class="c-contents__title">
+                            <p class="p-contents__title">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
                                 </a>

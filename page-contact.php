@@ -10,7 +10,7 @@
     <main>
         <section class="l-section p-fixedBackground --aboutus">
             <div class="l-container__middle --vertical">
-                <h2 class="p-heading__primary">Contact</h2>
+                <h2 class="p-heading__primary --center">Contact</h2>
             </div>
         </section>
 
