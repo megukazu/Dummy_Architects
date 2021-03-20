@@ -1,22 +1,23 @@
 @charset 'UTF-8';
+
 /*
   Break
 -----------------------------------------------------*/
+
 .u-break {
-
-  &.-sp {
-    @include mq(tab) {
-      display: none;
+    &.-sp {
+        @include mq(tab) {
+            display: none;
+        }
     }
-  }
-
-
-  &.-tab {
-    display: none;
-
-    @include mq(tab) {
-      display: inline;
+    &.-tab {
+        display: none;
+        @include mq(tab) {
+            display: inline;
+        }
     }
-  }
+}
 
+.mt2rem-sp {
+    margin-top: 2rem;
 }

@@ -3,16 +3,3 @@
 /*
   Heading
 */
-
-.c-heading__primary {
-    text-align: center;
-    font-weight: bold;
-    font-size: 8vw;
-    margin-bottom: set-size(24px);
-}
-
-@include mq(tab) {
-    .c-heading__primary {
-        margin-bottom: set-size(64px);
-    }
-}

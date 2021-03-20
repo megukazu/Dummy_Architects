@@ -4,7 +4,7 @@
 //------------------------------------
 // Contentの幅
 $content-width-full: 1200px !default;
-$content-width-middle: 768px !default;
+$content-width-middle: 800px !default;
 // ブレークポイント
 $breakpoints: ( 'sp': 480px, 'tab': 768px, 'lap': 1024px, 'desk': 1200px, 'vr': 1024px) !default;
 //====================================
@@ -21,11 +21,12 @@ $primary-text-color: #212121;
 // セカンダリーカラー
 $secondary-text-color: #fff;
 // 補足などの色
-$hint-text-color: #ccc;
+$hint-text-color: #ddd;
 //====================================
 //  Typeface
 //====================================
 $font-set-primary: 'Roboto',
+'Noto Sans JP',
 '游ゴシック',
 'Yu Gothic',
 '游ゴシック体',

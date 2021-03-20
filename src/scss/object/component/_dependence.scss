@@ -1,4 +1,5 @@
 @charset 'UTF-8';
+// プラグインやWordPressなどの独自クラスの制御
 
 /*
   Swiper.js
@@ -60,8 +61,21 @@
     height: 100%;
 }
 
+// 投稿欄のデフォルトpaddingをリセット
 .wp-block-media-text .wp-block-media-text__content {
     padding: 0;
+}
+
+// ページネーション
+.nav-links {
+    margin-top: set-size(32px);
+    text-align: center;
+}
+
+.page-numbers {
+    display: inline-block;
+    background-color: $hint-text-color;
+    padding: set-size(12px) set-size(16px);
 }
 
 
