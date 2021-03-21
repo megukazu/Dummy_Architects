@@ -8,7 +8,7 @@
 <body>
     <?php get_template_part('includes/header'); ?>
     <main>
-        <section class="l-section p-fixedBackground --aboutus">
+        <section class="l-section p-fixedBackground --contact">
             <div class="l-container__middle --vertical js-headerFloatTrigger">
                 <h2 class="p-heading__primary --center">Contact</h2>
             </div>

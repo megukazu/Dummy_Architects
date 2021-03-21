@@ -8,22 +8,22 @@
 <body>
     <?php get_template_part('includes/header'); ?>
     <main>
-        <section class="l-section p-fixedBackground --aboutus">
+        <section class="l-section p-fixedBackground --news">
             <div class="l-container__middle --vertical">
-                <h2 class="p-heading__primary --center">News</h2>
+                <h2 class="p-heading__primary --center  js-headerFloatTrigger">News</h2>
             </div>
         </section>
         <section class="l-section p-section">
             <div class="l-container__middle">
                 <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
-                        <article class="p-article --border">
+                        <article class="p-article --border  js-appearItem up">
                             <ul>
                                 <li class="p-contents__label">
                                     <?php the_category('$nbsp'); ?>
                                 </li>
                             </ul>
-                            <p class="p-contents__title">
+                            <p class="p-contents__text">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
                                 </a>

@@ -30,6 +30,13 @@
     margin-top: set-size(48px);
 }
 
+@include mq(tab) {
+    .p-contents__text {
+        font-size: set-size(16px);
+        line-height: 1.5;
+    }
+}
+
 .p-fixedBackground.--primary {
     background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/top_aboutus.jpg');
 }
@@ -40,6 +47,14 @@
 
 .p-fixedBackground.--aboutus {
     background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/aboutus_hero.jpg');
+}
+
+.p-fixedBackground.--news {
+    background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/news_hero.jpg');
+}
+
+.p-fixedBackground.--contact {
+    background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/contact_hero.jpg');
 }
 
 .p-fixedBackground {
@@ -194,7 +209,6 @@
 
 .p-date__primary {
     font-size: set-size(12px);
-    color: $hint-text-color;
 }
 
 .p-date__primary.--right {
