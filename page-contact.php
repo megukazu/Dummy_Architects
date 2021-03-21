@@ -19,7 +19,7 @@
                 <div class="p-form__body">
                     <p class="p-contents__text">お問い合わせは下記をご記入のうえ、<br>送信してください。</p>
                 </div>
-                <form action="">
+                <form action="" class="js-appearItem up">
                     <div class="p-form__row is-required">
                         <div class="p-form__item">
                             <div class="p-form__label">お名前</div>

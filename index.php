@@ -13,7 +13,6 @@
                 <h2 class="p-heading__primary --center">News</h2>
             </div>
         </section>
-
         <section class="l-section p-section">
             <div class="l-container__middle">
                 <?php if (have_posts()) : ?>
