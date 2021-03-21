@@ -40,10 +40,6 @@
                                      <figure><?php echo wp_get_attachment_image($image, 'large'); ?></figure>
                                  <?php endforeach; ?>
                              </div>
-
-
-
-
                          </article>
                      <?php endwhile; ?>
                      <?php the_posts_pagination(); ?>
