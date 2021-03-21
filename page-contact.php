@@ -9,7 +9,7 @@
     <?php get_template_part('includes/header'); ?>
     <main>
         <section class="l-section p-fixedBackground --aboutus">
-            <div class="l-container__middle --vertical">
+            <div class="l-container__middle --vertical js-headerFloatTrigger">
                 <h2 class="p-heading__primary --center">Contact</h2>
             </div>
         </section>

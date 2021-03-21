@@ -8,7 +8,7 @@
 <body>
     <?php get_template_part('includes/header'); ?>
     <main>
-        <section class="l-section --heroLess">
+        <section class="l-section --heroLess js-headerFloatTrigger">
             <h2 class="p-heading__primary --center">Works</h2>
         </section>
 
