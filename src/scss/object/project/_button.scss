@@ -29,8 +29,8 @@
     right: 5%;
     z-index: 1;
     margin: auto 0;
-    width: 24px;
-    height: 24px;
+    width: 54px;
+    height: 54px;
     background-color: transparent;
 }
 
@@ -42,7 +42,7 @@
     left: 0;
     display: block;
     margin: auto;
-    width: 24px;
+    width: 54px;
     height: 2px;
     background-color: $accent-color;
 }
@@ -59,11 +59,11 @@
 }
 
 .p-button--hamburger__line:before {
-    top: -5px;
+    top: -8px;
 }
 
 .p-button--hamburger__line:after {
-    top: 5px;
+    top: 8px;
 }
 
 .is-active-drawer .p-button--hamburger__line {

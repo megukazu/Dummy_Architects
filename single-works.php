@@ -28,9 +28,9 @@
                              <?php if ($siteArea) : ?>
                                  <dl class="p-defineList --dottedLine">
                                      <dt>敷地面積</dt>
-                                     <dd><?php echo esc_html($siteArea); ?>m2<?php if ($siteAreaTubo) : ?>(<?php echo esc_html($siteAreaTubo); ?>坪)<?php endif; ?></dd>
+                                     <dd><?php echo esc_html($siteArea); ?>m&sup2;<?php if ($siteAreaTubo) : ?>(<?php echo esc_html($siteAreaTubo); ?>坪)<?php endif; ?></dd>
                                      <dt>延床面積</dt>
-                                     <dd><?php echo esc_html($areaFloor); ?>m2<?php if ($areaFloorTubo) : ?>(<?php echo esc_html($areaFloorTubo); ?>坪)<?php endif; ?></dd>
+                                     <dd><?php echo esc_html($areaFloor); ?>m&sup2;<?php if ($areaFloorTubo) : ?>(<?php echo esc_html($areaFloorTubo); ?>坪)<?php endif; ?></dd>
                                      <dt>竣工年月</dt>
                                      <dd><?php echo esc_html($completion); ?>年</dd>
                                      <dt>工法</dt>

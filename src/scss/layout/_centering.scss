@@ -2,7 +2,7 @@
 
 /*
   Centering
------------------------------------------------------*/
+*/
 
 .l-container__full {
     margin: 0 auto;
@@ -21,6 +21,4 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: $content-width-middle;
-    width: 90%;
 }
