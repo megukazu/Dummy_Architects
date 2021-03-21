@@ -18,7 +18,7 @@
      <main>
          <section class="l-section --heroLess">
              <div class="l-container__middle js-headerFloatTrigger">
-                 <h2 class="p-heading__secondary --center"> <?php the_title(); ?></h2>
+                 <h2 class="p-heading__secondary --center">Works</h2>
                  <?php if (have_posts()) : ?>
                      <?php while (have_posts()) : the_post(); ?>
                          <article class="p-article --single">

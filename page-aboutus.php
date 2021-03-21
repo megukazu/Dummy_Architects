@@ -19,22 +19,25 @@
          </section>
          <section class="l-section p-section">
              <div class="l-container__full">
-                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                 <?php if (have_posts()) : ?>
+                     <?php while (have_posts()) : the_post(); ?>
                          <div class="c-gridFlex -gutter p-media">
                              <div class="c-gridFlex__item -sp12Of12 -tab6Of12">
-                                 <figure class="p-media__thumbnail js-img-parallax">
+                                 <figure class="p-media__thumbnail js-img-parallax js-appearItem right">
                                      <?php echo wp_get_attachment_image($aboutus_img, 'large'); ?>
                                  </figure>
                              </div>
-                             <div class="p-media__body c-gridFlex__item -sp12Of12 -tab6Of12">
+                             <div class="p-media__body c-gridFlex__item -sp12Of12 -tab6Of12 js-appearItem left">
                                  <p class="p-media__body"><?php echo nl2br($commit); ?></p>
                              </div>
                          </div>
-                 <?php endwhile;
-                    endif; ?>
+                     <?php endwhile; ?>
+                 <?php else : ?>
+                     <p>投稿がありません。</p>
+                 <?php endif; ?>
              </div>
          </section>
-         <section class="l-section">
+         <section class="l-section js-appearItem up">
              <div class="l-container__full">
                  <h2 class="p-heading__primary --center" id="overview">OVERVIEW</h2>
                  <dl class="p-defineList --dottedLine">

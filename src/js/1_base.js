@@ -41,10 +41,22 @@ class Main {
             new ImgParallax(el, 3);
         }
     }
+    _typingAnimation(el, inview) {
+        if (inview) {
+            new TypingAnimation(el)
+        }
+    }
     _destroyObservers() {
         this.observers.forEach(ob => {
             ob.destroy();
         });
+    }
+    _fluffyInViewAnimation(el, inview) {
+        if (inview) {
+            el.classList.add('inview');
+        } else {
+            el.classList.remove('inview');
+        }
     }
     destroy() {
         this._destroyObservers();
@@ -52,6 +64,9 @@ class Main {
     _scrollInit() {
         this.observers = new ScrollObserver('.js-headerFloatTrigger', this._headerAnimation.bind(this), { once: false });
         this.observers = new ScrollObserver('.swiper-container', this._toggleHeroSlider.bind(this), { once: false });
-        this.observers = new ScrollObserver('.js-img-parallax', this._imgParallax.bind(this), { once: true });
+        this.observers = new ScrollObserver('.js-img-parallax', this._imgParallax.bind(this), { once: false });
+        this.observers = new ScrollObserver('.js-typing', this._typingAnimation.bind(this), { once: true, rootMargin: "-200px 0px" });
+        this.observers = new ScrollObserver('.js-appear', this._fluffyInViewAnimation, { once: true, rootMargin: "-200px 0px" });
+        this.observers = new ScrollObserver('.js-appearItem', this._fluffyInViewAnimation, { once: true, rootMargin: "-200px 0px" });
     }
 }

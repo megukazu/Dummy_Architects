@@ -9,7 +9,7 @@
     <?php get_template_part('includes/header'); ?>
     <main>
         <section class="l-section --heroLess js-headerFloatTrigger">
-            <h2 class="p-heading__primary --center">Works</h2>
+            <h2 class="p-heading__primary --center js-typing">Works</h2>
         </section>
 
         <section class="l-section p-section">
