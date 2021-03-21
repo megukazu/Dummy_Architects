@@ -3,9 +3,8 @@
 ************************************/
 
 class FormLabelFloat {
-    constructor(element) {
-        this.element = element;
-        this.trigger = document.querySelectorAll(this.element)
+    constructor() {
+        this.trigger = document.querySelectorAll('.js-input');
         this._addEvent()
     }
     _addEvent() {

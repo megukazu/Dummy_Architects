@@ -3,9 +3,8 @@
 ************************************/
 
 class HamburgerButton {
-    constructor(element) {
-        this.element = element;
-        this.trigger = document.querySelector(this.element);
+    constructor() {
+        this.trigger = document.querySelector('.js-button-hamburger');
         this.target = document.querySelector('body');
         this._addEvent()
     }

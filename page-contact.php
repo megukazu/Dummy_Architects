@@ -9,7 +9,7 @@
     <?php get_template_part('includes/header'); ?>
     <main>
         <section class="l-section p-fixedBackground --aboutus">
-            <div class="l-container__middle --vertical">
+            <div class="l-container__middle --vertical js-headerFloatTrigger">
                 <h2 class="p-heading__primary --center">Contact</h2>
             </div>
         </section>
@@ -19,7 +19,7 @@
                 <div class="p-form__body">
                     <p class="p-contents__text">お問い合わせは下記をご記入のうえ、<br>送信してください。</p>
                 </div>
-                <form action="">
+                <form action="" class="js-appearItem up">
                     <div class="p-form__row is-required">
                         <div class="p-form__item">
                             <div class="p-form__label">お名前</div>

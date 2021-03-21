@@ -23,4 +23,7 @@ class HeroSlider {
         }
         this.swiper.autoplay.start();
     }
+    stop() {
+        this.swiper.autoplay.stop();
+    }
 }
