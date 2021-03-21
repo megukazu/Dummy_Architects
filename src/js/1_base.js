@@ -1,10 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    // HeroSlider(引数: element, speed, delay)
-    // const hero = new HeroSlider('.swiper-container', 2000, 4000);
-    // hero.start();
-
-
     const main = new Main();
 });
 
@@ -21,6 +15,7 @@ class Main {
         return this._observers;
     }
     _init() {
+        // HeroSlider(引数: element, speed, delay)
         this.hero = new HeroSlider('.swiper-container', 2000, 4000);
         new HamburgerButton();
         new FormLabelFloat();
@@ -40,6 +35,12 @@ class Main {
             this.body.classList.add('inview');
         }
     }
+    _imgParallax(el, inview) {
+        if (inview) {
+            // ImgParallax(引数: element, delay)
+            new ImgParallax(el, 3);
+        }
+    }
     _destroyObservers() {
         this.observers.forEach(ob => {
             ob.destroy();
@@ -51,5 +52,6 @@ class Main {
     _scrollInit() {
         this.observers = new ScrollObserver('.js-headerFloatTrigger', this._headerAnimation.bind(this), { once: false });
         this.observers = new ScrollObserver('.swiper-container', this._toggleHeroSlider.bind(this), { once: false });
+        this.observers = new ScrollObserver('.js-img-parallax', this._imgParallax.bind(this), { once: true });
     }
 }

@@ -22,7 +22,7 @@
                  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                          <div class="c-gridFlex -gutter p-media">
                              <div class="c-gridFlex__item -sp12Of12 -tab6Of12">
-                                 <figure class="p-media__thumbnail">
+                                 <figure class="p-media__thumbnail js-img-parallax">
                                      <?php echo wp_get_attachment_image($aboutus_img, 'large'); ?>
                                  </figure>
                              </div>
