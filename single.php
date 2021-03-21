@@ -9,7 +9,7 @@
     <?php get_template_part('includes/header'); ?>
     <main>
         <section class="l-section --heroLess">
-            <div class="l-container__middle">
+            <div class="l-container__middle js-headerFloatTrigger">
                 <h2 class="p-heading__news"> <?php the_title(); ?></h2>
                 <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>

@@ -20,7 +20,7 @@
                     <div class="slide-img" style="background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/hero3.jpg');"></div>
                 </div>
             </div>
-            <div class="p-heroTitle">
+            <div class="p-heroTitle js-headerFloatTrigger">
                 <h1 class="p-heading__primary --center">Dummy<br>Architects</h1>
             </div>
         </div>
