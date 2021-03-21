@@ -1,3 +1,9 @@
+<?php
+$args = array(
+    'posts_per_page' => 3
+);
+$the_query = new WP_Query($args);
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -31,7 +37,7 @@
                     お客さまの課題を解決しご要望におこたえします。<br>
                     ときにいやされ、ときにワクワクする、お客様だけの空間を提供します。
                 </p>
-                <p class="l-button js-appearItem up"><a class="c-button p-button" href="">Read More</a></p>
+                <p class="l-button js-appearItem up"><a class="c-button p-button" href="<?php echo home_url('/aboutus'); ?>">Read More</a></p>
             </div>
         </section>
         <section class="l-section p-fixedBackground --secondary">
@@ -41,25 +47,23 @@
                     施工実績をご覧ください。<br>
                     家具のご相談やインテリアのデザインについてもご相談ください。
                 </p>
-                <p class="l-button js-appearItem up"><a class="c-button p-button" href="">Read More</a></p>
+                <p class="l-button js-appearItem up"><a class="c-button p-button" href="<?php echo home_url('/works'); ?>">Read More</a></p>
             </div>
         </section>
         <section class="l-section">
             <div class="l-container__middle">
                 <h2 class="p-heading__primary --center js-typing">News</h2>
-                <article class="p-article --border js-appearItem up">
-                    <p class="p-contents__title">テストテストテストテストテストテストテストテストテス</p>
-                    <p class="p-date__primary --right">2021年1月1日</p>
-                </article>
-                <article class="p-article --border js-appearItem up">
-                    <p class="p-contents__title">テストテストテストテストテストテストテストテストテス</p>
-                    <p class="p-date__primary --right">2021年1月1日</p>
-                </article>
-                <article class="p-article --border js-appearItem up">
-                    <p class="p-contents__title">テストテストテストテストテストテストテストテストテス</p>
-                    <p class="p-date__primary --right js-appearItem up">2021年1月1日</p>
-                </article>
-                <p class="l-button js-appearItem up"><a class="c-button p-button" href="">Read More</a></p>
+                <?php if ($the_query->have_posts()) : ?>
+                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                        <article class="p-article --border js-appearItem up">
+                            <a href="<?php the_permalink(); ?>">
+                                <p class="p-contents__title"><?php the_title(); ?> ?></p>
+                                <p class="p-date__primary --right"><?php the_time('Y/m/d'); ?></p>
+                            </a>
+                        </article>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <p class="l-button js-appearItem up"><a class="c-button p-button" href="<?php echo home_url('/news'); ?>">Read More</a></p>
             </div>
         </section>
 

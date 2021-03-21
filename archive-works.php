@@ -9,7 +9,7 @@
     <?php get_template_part('includes/header'); ?>
     <main>
         <section class="l-section --heroLess js-headerFloatTrigger">
-            <h2 class="p-heading__primary --center js-typing">Works</h2>
+            <h2 class="p-heading__primary --center">Works</h2>
         </section>
 
         <section class="l-section p-section">
@@ -44,11 +44,8 @@
                     <p>投稿がありません。</p>
                 <?php endif; ?>
             </div>
-
-
+            <p class="l-button js-appearItem up"><a class="c-button p-button" href="<?php echo home_url('/contact'); ?>">Contact</a></p>
         </section>
-
-
         <?php get_template_part('includes/footer'); ?>
         <?php get_footer(); ?>
     </main>

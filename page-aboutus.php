@@ -55,6 +55,7 @@
                      <dd>住宅・店舗・商業施設などの設計・施工監理</dd>
                  </dl>
              </div>
+             <p class="l-button js-appearItem up"><a class="c-button p-button" href="<?php echo home_url('/works'); ?>">Works</a></p>
          </section>
 
          <?php get_template_part('includes/footer'); ?>

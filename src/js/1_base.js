@@ -62,7 +62,7 @@ class Main {
         this._destroyObservers();
     }
     _scrollInit() {
-        this.observers = new ScrollObserver('.js-headerFloatTrigger', this._headerAnimation.bind(this), { once: false });
+        this.observers = new ScrollObserver('.js-headerFloatTrigger', this._headerAnimation.bind(this), { once: false, threshold: 1 });
         this.observers = new ScrollObserver('.swiper-container', this._toggleHeroSlider.bind(this), { once: false });
         this.observers = new ScrollObserver('.js-img-parallax', this._imgParallax.bind(this), { once: false });
         this.observers = new ScrollObserver('.js-typing', this._typingAnimation.bind(this), { once: true, rootMargin: "-200px 0px" });
