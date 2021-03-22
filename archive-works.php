@@ -16,9 +16,10 @@
             <div class="l-container__middle">
                 <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
-                        <a href="<?php the_permalink(); ?>">
-                            <article class="p-article">
-                                <figure class="">
+
+                        <article class="p-article__card">
+                            <a href="<?php the_permalink(); ?>">
+                                <figure class="p-article__thumbnail">
                                     <?php if (has_post_thumbnail()) : ?>
                                         <?php the_post_thumbnail(); ?>
                                     <?php else : ?>
@@ -33,11 +34,11 @@
                                         ?>
                                     </span>
                                 </p>
-                                <h3 class="p-contents__title">
+                                <h3 class="p-article__title">
                                     <?php the_title(); ?>
                                 </h3>
-                            </article>
-                        </a>
+                            </a>
+                        </article>
                     <?php endwhile; ?>
                     <?php the_posts_pagination(); ?>
                 <?php else : ?>

@@ -1,0 +1,58 @@
+@charset 'UTF-8';
+
+/*
+  Define List
+*/
+
+.p-defineList {
+    margin-top: set-size(36px);
+    border-bottom: 1px solid $hint-text-color;
+}
+
+.p-defineList dt {
+    font-size: set-size(12px);
+    border-top: 1px solid $hint-text-color;
+    padding-top: set-size(16px);
+}
+
+.p-defineList dd {
+    margin: set-size(8px) 0 set-size(16px);
+    font-size: set-size(12px);
+}
+
+@media screen and (min-width: 768px) {
+    .p-defineList {
+        border: none;
+    }
+    .p-defineList.--dottedLine {
+        overflow: hidden;
+        margin: 0 auto;
+        max-width: 650px;
+        width: 100%;
+    }
+    .p-defineList.--dottedLine dt {
+        display: flex;
+        float: left;
+        clear: left;
+        margin: 0;
+        padding: set-size(16px);
+        width: 300px;
+        font-size: set-size(16px);
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+    }
+    .p-defineList.--dottedLine dd {
+        margin: 0;
+        padding: set-size(16px);
+        font-size: set-size(16px);
+    }
+    .p-defineList.--dottedLine dt:after {
+        display: block;
+        margin-right: set-size(32px);
+        max-width: 50%;
+        width: 100%;
+        border-bottom: 1px dashed #212121;
+        content: '';
+    }
+}

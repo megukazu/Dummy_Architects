@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+/*
+  Form
+*/
+
+.c-input__text {
+    height: 27px;
+    padding: 27px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    appearance: none;
+    cursor: auto;
+    width: 100%;
+}
+
+.c-textarea {
+    margin-top: set-size(16px);
+}
+
+.c-textarea textarea {
+    outline: none;
+    appearance: none;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: set-size(160px);
+}

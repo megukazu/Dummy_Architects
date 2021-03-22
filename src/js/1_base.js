@@ -37,7 +37,6 @@ class Main {
     }
     _imgParallax(el, inview) {
         if (inview) {
-            // ImgParallax(引数: element, delay)
             new ImgParallax(el, 3);
         }
     }

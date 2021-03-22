@@ -4,17 +4,17 @@
 
 class FormLabelFloat {
     constructor() {
-        this.trigger = document.querySelectorAll('.js-input');
-        this._addEvent()
+        this.els = document.querySelectorAll('.js-input');
+        this._init()
     }
-    _addEvent() {
-        if (this.trigger) {
-            this.trigger.forEach((value) => {
-                value.addEventListener('focus', () => {
-                    this.parent = value.parentNode;
+    _init() {
+        if (this.els) {
+            this.els.forEach((el) => {
+                el.addEventListener('focus', () => {
+                    this.parent = el.parentNode;
                     this.parent.classList.add('is-float')
                 });
-                value.addEventListener('blur', () => {
+                el.addEventListener('blur', () => {
                     this.parent.classList.remove('is-float')
                 });
             });

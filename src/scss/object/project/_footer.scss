@@ -22,15 +22,14 @@
     text-align: center;
 }
 
-.p-footer__tel {
-    font-size: set-size(12px);
-    margin-bottom: set-size(32px);
-    text-align: center;
-}
-
+.p-footer__tel,
 .p-footer__copyright {
     font-size: set-size(12px);
     text-align: center;
+}
+
+.p-footer__tel {
+    margin-bottom: set-size(32px);
 }
 
 @include mq(tab) {
