@@ -8,38 +8,40 @@
     margin-top: set-size(64px);
     padding: set-size(40px) 0;
     background-color: $sub-color;
-    text-align: center;
 }
 
 .p-footer__title {
     font-weight: bold;
     margin-bottom: set-size(32px);
+    text-align: center;
 }
 
 .p-footer__address {
     font-size: set-size(12px);
     margin-bottom: set-size(8px);
+    text-align: center;
 }
 
 .p-footer__tel {
     font-size: set-size(12px);
     margin-bottom: set-size(32px);
+    text-align: center;
 }
 
 .p-footer__copyright {
     font-size: set-size(12px);
+    text-align: center;
 }
 
 @include mq(tab) {
-    .p-footer {
-        text-align: left;
-    }
     .p-footer__title {
         font-size: set-size(24px);
+        text-align: left;
     }
     .p-footer__address,
     .p-footer__tel {
         font-size: set-size(16px);
+        text-align: left;
     }
     .p-footer__copyright {
         font-size: set-size(16px);

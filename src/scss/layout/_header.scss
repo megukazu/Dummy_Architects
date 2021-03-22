@@ -10,4 +10,10 @@
     left: 0;
     right: 0;
     z-index: 2;
+    transform: translateY(-120%);
+    transition: transform .3s ease-in-out
+}
+
+.inview .l-header {
+    transform: none;
 }
