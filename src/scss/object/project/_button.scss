@@ -46,6 +46,10 @@
     width: 100px;
 }
 
+.p-button.--short:after {
+    content: none;
+}
+
 
 /*
   Hamburger Button
