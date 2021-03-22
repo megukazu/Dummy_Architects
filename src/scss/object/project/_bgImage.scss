@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+/*
+  BackGround Image
+*/
+
+.p-fixedBackground.--primary {
+    background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/top_aboutus.jpg');
+}
+
+.p-fixedBackground.--secondary {
+    background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/top_works.jpg');
+}
+
+.p-fixedBackground.--aboutus {
+    background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/aboutus_hero.jpg');
+}
+
+.p-fixedBackground.--news {
+    background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/news_hero.jpg');
+}
+
+.p-fixedBackground.--contact {
+    background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/contact_hero.jpg');
+}
+
+.p-fixedBackground {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@include mq(tab) {
+    .p-fixedBackground {
+        background-attachment: fixed;
+    }
+}
