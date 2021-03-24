@@ -4,7 +4,7 @@
   Global-nav
 */
 
-.p-globalNav {
+.p-globalNav__wrap {
     position: fixed;
     top: 0;
     right: 0;
@@ -15,6 +15,17 @@
     background-color: $main-color;
     opacity: 0;
     transition: all .3s ease-in-out;
+}
+
+.p-globalNav__thumbnail {
+    background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/menu.jpg');
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: none;
 }
 
 .p-globalNav li a {
@@ -31,7 +42,13 @@
     color: $hint-text-color;
 }
 
-.is-active-drawer .p-globalNav {
+.is-active-drawer .p-globalNav__wrap {
     visibility: visible;
     opacity: 1;
+}
+
+@include mq(tab) {
+    .p-globalNav__thumbnail {
+        display: inline-block;
+    }
 }

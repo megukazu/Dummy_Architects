@@ -1,0 +1,51 @@
+@charset 'UTF-8';
+//====================================
+//  Page Top Move Animation
+//====================================
+.p-topButton {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+}
+
+.inview.p-topButton {
+    opacity: 1;
+    visibility: visible;
+}
+
+.p-topButton__primary {
+    position: relative;
+    display: block;
+    padding: 22px;
+    background-color: $accent-color;
+}
+
+.p-topButton__primary:hover {
+    background-color: rgba(33, 33, 33, .5);
+}
+
+.p-topButton__primary:after {
+    position: absolute;
+    top: 17px;
+    right: 12.25px;
+    padding: 8px;
+    border-top: 2px solid $main-color;
+    border-right: 2px solid $main-color;
+    background-color: transparent;
+    content: '';
+    transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 1024px) {
+    .p-topButton__primary {
+        padding: 30px;
+    }
+    .p-topButton__primary:after {
+        top: 22px;
+        right: 19px;
+    }
+}
