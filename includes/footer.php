@@ -14,5 +14,6 @@
                 </div>
             </div>
         </div>
+        <p class="p-topButton js-topButton"><a class="p-topButton__primary" href="#top"><span class="screen-reader-text">このページの先頭に戻る</span></a></p>
     </div>
 </footer>
