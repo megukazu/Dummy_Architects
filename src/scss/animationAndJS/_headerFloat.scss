@@ -4,6 +4,7 @@
 //====================================
 .js-header {
     transform: translateY(-120%);
+    transition: transform .3s ease-in-out
 }
 
 .inview .js-header {
