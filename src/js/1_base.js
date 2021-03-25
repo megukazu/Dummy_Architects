@@ -20,6 +20,7 @@ class Main {
         this.hero = new HeroSlider('.swiper-container', 2000, 4000);
         new HamburgerButton();
         new FormLabelFloat();
+        new OpeningAnimation();
         this._scrollInit();
     }
     _toggleHeroSlider(el, inview) {
