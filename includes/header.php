@@ -1,7 +1,7 @@
-<header class="l-header js-header">
+<header class="l-header">
 	<div class="l-container__full">
 		<div class="p-header">
-			<h1 class="p-header__title"> <a href="<?php echo home_url() ?>">Dummy<br>Architects</a></h1>
+			<h1 class="p-header__title js-header"> <a href="<?php echo home_url() ?>">Dummy<br>Architects</a></h1>
 			<nav class="l-header__nav" role="navigation">
 				<h2 class="screen-reader-text">サイト内メニュー</h2>
 				<button type="button" class="js-button-hamburger c-button p-button--hamburger" aria-controls="global-nav" aria-expanded="false">
