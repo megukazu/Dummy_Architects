@@ -4,7 +4,17 @@
   Footer
 */
 
+.p-footerFixed {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: set-size(270px);
+    box-sizing: border-box;
+}
+
 .p-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     margin-top: set-size(64px);
     padding: set-size(40px) 0;
     background-color: $sub-color;

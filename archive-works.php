@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <div class="p-body__inner">
+    <div class="p-body__inner p-footerFixed">
         <?php get_template_part('includes/header'); ?>
         <main>
             <section class="l-section --heroLess js-headerFloatTrigger">

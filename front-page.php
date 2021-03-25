@@ -12,7 +12,7 @@ $the_query = new WP_Query($args);
 </head>
 
 <body>
-    <div class="p-body__inner">
+    <div class="p-body__inner p-footerFixed">
         <?php get_template_part('includes/header'); ?>
         <main>
             <div class="swiper-container p-hero">
