@@ -1,7 +1,10 @@
 @charset 'UTF-8';
+//====================================
+//  Typing Animation
+//====================================
 .js-header {
     transform: translateY(-120%);
-    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out
 }
 
 .inview .js-header {

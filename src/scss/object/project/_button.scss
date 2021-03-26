@@ -5,6 +5,7 @@
 */
 
 .p-button {
+    position: relative;
     display: inline-block;
     margin: 0 auto;
     width: 200px;
@@ -12,10 +13,45 @@
     padding: set-size(16px) 0;
     color: $secondary-text-color;
     text-align: center;
+    border: 2px solid $accent-color;
+}
+
+.p-button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 25px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    border-top: 2px solid $main-color;
+    border-right: 2px solid $main-color;
+}
+
+.p-button:hover {
+    background-color: transparent;
+    color: $primary-text-color;
+}
+
+.p-button:hover:after {
+    background-color: transparent;
+    border-top: 2px solid $accent-color;
+    border-right: 2px solid $accent-color;
+    right: 15px;
 }
 
 .p-button.--short {
     width: 100px;
+}
+
+.p-button__link a {
+    transition: all .3s ease-in-out;
+}
+
+.p-button__link a:hover {
+    color: $hint-text-color;
 }
 
 
@@ -55,7 +91,7 @@
     height: 100%;
     background-color: inherit;
     content: '';
-    transition: transform .2s ease-in-out;
+    transition: transform .3s ease-in-out;
 }
 
 .p-button--hamburger__line:before {
@@ -82,4 +118,20 @@
 
 .is-active-drawer .p-button--hamburger__line:after {
     transform: rotate(45deg);
+}
+
+@include mq(tab) {
+    .p-button--hamburger {
+        width: 54px;
+        height: 54px;
+    }
+    .p-button--hamburger__line {
+        width: 54px;
+    }
+    .p-button--hamburger__line:before {
+        top: -8px;
+    }
+    .p-button--hamburger__line:after {
+        top: 8px;
+    }
 }

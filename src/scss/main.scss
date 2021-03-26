@@ -34,6 +34,7 @@
 @import 'object/component/button';
 @import 'object/component/media';
 @import 'object/component/heading';
+@import 'object/component/form';
 @import 'object/component/contents';
 @import 'object/component/dependence'; // WordPress, プラグインなどの独自ラスを制御
 
@@ -46,6 +47,10 @@
 @import 'object/project/hero';
 @import 'object/project/heading';
 @import 'object/project/media';
+@import 'object/project/form';
+@import 'object/project/defineList';
+@import 'object/project/bgImage';
+@import 'object/project/article';
 @import 'object/project/contents';
 @import 'object/project/footer';
 @import 'object/project/button';
@@ -64,4 +69,6 @@
 
 @import 'animationAndJS/headerFloat';
 @import 'animationAndJS/typingAnimation';
-@import 'animationAndJS/_fluffyInViewAnimation';
+@import 'animationAndJS/fluffyInViewAnimation';
+@import 'animationAndJS/pageTopButton';
+@import 'animationAndJS/openingAnimation';

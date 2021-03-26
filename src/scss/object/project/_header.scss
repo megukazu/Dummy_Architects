@@ -8,3 +8,9 @@
     font-weight: bold;
     padding: set-size(16px) 0;
 }
+
+@include mq(tab) {
+    .p-header__title {
+        font-size: set-size(24px);
+    }
+}

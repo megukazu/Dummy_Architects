@@ -23,13 +23,13 @@
     text-align: center;
 }
 
+.p-heading__news {
+    font-size: set-size(20px);
+}
+
 @include mq(tab) {
     .p-heading__primary {
         font-size: 8vw;
         margin-bottom: set-size(64px);
     }
-}
-
-.p-heading__news {
-    font-size: set-size(20px);
 }

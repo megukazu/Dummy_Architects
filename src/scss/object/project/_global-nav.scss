@@ -4,21 +4,37 @@
   Global-nav
 */
 
-.p-globalNav {
+.p-globalNav__wrap {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     visibility: hidden;
-    padding-top: set-size(64px);
+    height: 100%;
     background-color: $main-color;
     opacity: 0;
     transition: all .3s ease-in-out;
 }
 
+.p-globalNav__thumbnail {
+    background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/menu.jpg');
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: none;
+}
+
+.p-globalNav {
+    padding-top: set-size(48px);
+}
+
 .p-globalNav li a {
     display: block;
+    font-weight: bold;
     padding: set-size(36px);
     text-align: center;
     letter-spacing: 2px;
@@ -30,7 +46,13 @@
     color: $hint-text-color;
 }
 
-.is-active-drawer .p-globalNav {
+.is-active-drawer .p-globalNav__wrap {
     visibility: visible;
     opacity: 1;
+}
+
+@include mq(tab) {
+    .p-globalNav__thumbnail {
+        display: inline-block;
+    }
 }

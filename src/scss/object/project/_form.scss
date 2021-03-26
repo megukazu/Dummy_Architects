@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+/*
+  Form
+*/
+
+.p-form__row {
+    position: relative;
+    margin-top: set-size(48px);
+}
+
+.p-form__row:last-of-type {
+    margin-top: set-size(80px);
+}
+
+.p-form__item {
+    position: relative;
+    width: 100%;
+}
+
+.p-form__label {
+    position: absolute;
+    top: 27px;
+    transition: .3s all ease;
+    pointer-events: none;
+}
+
+.is-float .p-form__label {
+    top: -15px;
+    color: #666;
+    transform: scale(.66);
+}
