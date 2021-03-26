@@ -46,6 +46,14 @@
     width: 100px;
 }
 
+.p-button__link a {
+    transition: all .3s ease-in-out;
+}
+
+.p-button__link a:hover {
+    color: $hint-text-color;
+}
+
 
 /*
   Hamburger Button
