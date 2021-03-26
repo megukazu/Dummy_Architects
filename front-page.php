@@ -11,7 +11,7 @@ $the_query = new WP_Query($args);
     <?php get_header(); ?>
 </head>
 
-<body <?php body_class() ?>>
+<body <?php body_class(); ?>>
     <div class="p-body__inner p-footerFixed">
         <?php get_template_part('includes/header'); ?>
         <main>
