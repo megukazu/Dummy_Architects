@@ -35,6 +35,7 @@
                         <p>投稿がありません。</p>
                     <?php endif; ?>
                 </div>
+                <p class="l-button js-appearItem up"><a class="c-button p-button" href="<?php echo home_url('/news'); ?>"><span class="screen-reader-text">ニュース一覧へ移動</span>一覧に戻る</a></p>
             </section>
         </main>
         <?php get_template_part('includes/footer'); ?>
