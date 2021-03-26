@@ -32,10 +32,7 @@
 
 @import 'object/component/grid';
 @import 'object/component/button';
-@import 'object/component/media';
-@import 'object/component/heading';
 @import 'object/component/form';
-@import 'object/component/contents';
 @import 'object/component/dependence'; // WordPress, プラグインなどの独自ラスを制御
 
 /*
@@ -54,14 +51,6 @@
 @import 'object/project/contents';
 @import 'object/project/footer';
 @import 'object/project/button';
-
-/*
-  3.3 - Utility
------------------------------------------------------*/
-
-@import 'object/utility/break';
-@import 'object/utility/margin';
-@import 'object/utility/padding';
 
 /*
   4.0 - Animation And JavaScript

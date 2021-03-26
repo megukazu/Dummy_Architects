@@ -1,7 +1,9 @@
 @charset 'UTF-8';
-//====================================
-//  Fluffy Inview Animation
-//====================================
+
+/*
+  Fluffy Inview Animation
+*/
+
 $pattern: ( "up": translateY(20px), "down": translateY(-10px), "left": translateX(40px), "right": translateX(-40px));
 //block
 @each $key,
