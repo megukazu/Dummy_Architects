@@ -5,7 +5,7 @@
     <?php get_header(); ?>
 </head>
 
-<body>
+<body <?php body_class() ?>>
     <div class="p-body__inner p-footerFixed">
         <?php get_template_part('includes/header'); ?>
         <main>
@@ -20,19 +20,17 @@
                         <?php while (have_posts()) : the_post(); ?>
                             <article class="p-article --border  js-appearItem up">
                                 <ul>
-                                    <li class="p-contents__label">
+                                    <li class="p-contents__label p-button__link">
                                         <?php the_category('$nbsp'); ?>
                                     </li>
                                 </ul>
-                                <p class="p-contents__text">
+                                <p class="p-contents__text p-button__link">
                                     <a href="<?php the_permalink(); ?>">
                                         <?php the_title(); ?>
                                     </a>
                                 </p>
                                 <p class="p-date__primary --right">
-                                    <a href="<?php the_permalink(); ?>">
-                                        <span><time datetime="<?php the_time(DATE_W3C); ?>"><?php the_time('Y/m/d'); ?></time></span>
-                                    </a>
+                                    <span><time datetime="<?php the_time(DATE_W3C); ?>"><?php the_time('Y/m/d'); ?></time></span>
                                 </p>
                             </article>
                         <?php endwhile; ?>

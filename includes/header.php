@@ -1,3 +1,4 @@
+<?php wp_body_open(); ?>
 <header class="l-header">
 	<div class="l-container__full">
 		<div class="p-header">
