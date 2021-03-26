@@ -27,6 +27,10 @@
     font-size: set-size(20px);
 }
 
+.p-heading__news.--center {
+    text-align: center;
+}
+
 @include mq(tab) {
     .p-heading__primary {
         font-size: 8vw;
