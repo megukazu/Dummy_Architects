@@ -18,13 +18,13 @@ $the_query = new WP_Query($args);
             <div class="swiper-container p-hero">
                 <div class="swiper-wrapper p-hero_thumbnail">
                     <div class="swiper-slide">
-                        <div class="slide-img" style="background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/hero1.jpg');"></div>
+                        <div class="slide-img --first"></div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide-img" style="background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/hero2.jpg');"></div>
+                        <div class="slide-img --second"></div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide-img" style="background-image: url('//dummyarchitects.local/wp-content/themes/dummy-architects/dist/img/hero3.jpg');"></div>
+                        <div class="slide-img --third"></div>
                     </div>
                 </div>
                 <div class="p-heroTitle js-headerFloatTrigger">
