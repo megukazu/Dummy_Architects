@@ -64,7 +64,7 @@ $the_query = new WP_Query($args);
                             </article>
                         <?php endwhile; ?>
                     <?php endif; ?>
-                    <p class="l-button js-appearItem up"><a class="c-button p-button" href="<?php echo home_url('/news'); ?>"><span class="screen-reader-text">ニュース一覧へ移動</span>Read More</a></p>
+                    <p class="l-button js-appearItem up"><a class="c-button p-button" href="<?php echo home_url('/postlist'); ?>"><span class="screen-reader-text">ニュース一覧へ移動</span>Read More</a></p>
                 </div>
             </section>
         </main>

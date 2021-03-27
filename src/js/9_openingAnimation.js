@@ -14,7 +14,6 @@ class OpeningAnimation {
         }, 2500);
     }
 
-
     _openingWrap() {
         const createOpeningWrap = document.createElement("div")
         createOpeningWrap.setAttribute("class", "opening-wrap");
