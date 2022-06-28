@@ -1,11 +1,4 @@
- <?php $siteArea = SCF::get('siteArea');
-    $siteAreaTubo = SCF::get('siteAreaTubo');
-    $areaFloor = SCF::get('areaFloor');
-    $areaFloorTubo = SCF::get('areaFloorTubo');
-    $completion = SCF::get('completion');
-    $method = SCF::get('method');
-    $images = SCF::get('image');
-    ?>
+
  <!DOCTYPE html>
  <html lang="ja">
 
@@ -26,23 +19,42 @@
                                  <div class="p-contents__text">
                                      <?php the_content(); ?>
                                  </div>
-                                 <?php if ($siteArea) : ?>
-                                     <dl class="p-defineList --dottedLine">
-                                         <dt>敷地面積</dt>
-                                         <dd><?php echo esc_html($siteArea); ?>m&sup2;<?php if ($siteAreaTubo) : ?>(<?php echo esc_html($siteAreaTubo); ?>坪)<?php endif; ?></dd>
-                                         <dt>延床面積</dt>
-                                         <dd><?php echo esc_html($areaFloor); ?>m&sup2;<?php if ($areaFloorTubo) : ?>(<?php echo esc_html($areaFloorTubo); ?>坪)<?php endif; ?></dd>
-                                         <dt>竣工年月</dt>
-                                         <dd><?php echo esc_html($completion); ?>年</dd>
-                                         <dt>工法</dt>
-                                         <dd><?php echo esc_html($method); ?></dd>
-                                     </dl>
-                                 <?php endif; ?>
+                                <?php if(get_field('site_area')): ?>
+                                 <dl class="p-defineList --dottedLine">
+                                    
+                                    <dt>敷地面積</dt>
+                                    
+                                    <dd><?php the_field('site_area'); ?></dd>
+                                   
+                                    <dt>延床面積</dt>
+                                    <?php if(get_field('total_floor')): ?>
+                                    <dd><?php the_field('total_floor'); ?>m&sup2(坪)</dd>
+                                    <?php endif; ?>
+                                    
+                                    <dt>竣工年月</dt>
+                                    <?php if(get_field('completion_date')): ?>
+                                    <dd><?php the_field('completion_date'); ?></dd>
+                                    <?php endif; ?>
+                                    
+                                    <dt>工法</dt>
+                                    <?php if( get_field('construction_method')): ?>
+                                    <dd><?php the_field('construction_method'); ?></dd>
+                                    <?php endif; ?>
+                                </dl>
+                                <?php endif; ?>
+                                    
+                                <?php if(have_rows('works_images')): ?>
                                  <div class="p_contents__thumbnail">
-                                     <?php foreach ($images as $image) : ?>
-                                         <figure><?php echo wp_get_attachment_image($image, 'large'); ?></figure>
-                                     <?php endforeach; ?>
+                                   <?php while(have_rows('works_images')): the_row(); ?>
+                                    <?php 
+                                    $img = get_sub_field('works_image');
+                                    $url = $img['url'];
+                                    $alt = $img['alt'];                      
+                                    ?>
+                                    <figure><img src="<?php echo $url ?>" alt="<?php echo $alt; ?>"></figure>
+                                    <?php endwhile ?>
                                  </div>
+                                 <?php endif; ?>
                              </article>
                          <?php endwhile; ?>
                          <?php the_posts_pagination(); ?>

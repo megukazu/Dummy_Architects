@@ -28,26 +28,32 @@ $the_query = new WP_Query($args);
                     </div>
                 </div>
                 <div class="p-heroTitle js-headerFloatTrigger">
-                    <h1 class="p-heading__primary --center">Dummy<br>Architects</h1>
+                    <?php if(get_field('kv_text')): ?>
+                    <h1 class="p-heading__primary --center">
+                        <?php the_field('kv_text'); ?>
+                    </h1>
+                    <?php endif; ?>
                 </div>
             </div>
             <section class="l-section p-fixedBackground --primary">
                 <div class="l-container__middle --vertical">
                     <h2 class="p-heading__primary --center js-typing">AboutUs</h2>
+                    <?php if('top_about_text'): ?>
                     <p class="p-contents__text js-appearItem up">
-                        お客さまの<em>課題を解決</em>しご要望におこたえします。<br>
-                        ときにいやされ、ときにワクワクする、<em>お客様だけの空間</em>を提供します。
+                      <?php the_field('top_about_text'); ?>
                     </p>
+                    <?php endif; ?>
                     <p class="l-button js-appearItem up"><a class="c-button p-button" href="<?php echo home_url('/aboutus'); ?>"><span class="screen-reader-text">会社概要ページへ移動</span>Read More</a></p>
                 </div>
             </section>
             <section class="l-section p-fixedBackground --secondary">
                 <div class="l-container__middle --vertical">
                     <h2 class="p-heading__primary --center js-typing">Works</h2>
+                    <?php if(get_field('top_works_text')): ?>
                     <p class="p-contents__text js-appearItem up">
-                        施工実績をご覧ください。<br>
-                        家具のご相談やインテリアのデザインについてもご相談ください。
+                       <?php the_field('top_works_text'); ?>
                     </p>
+                    <?php endif; ?>
                     <p class="l-button js-appearItem up"><a class="c-button p-button" href="<?php echo home_url('/works'); ?>"><span class="screen-reader-text">施工実績へ移動</span>Read More</a></p>
                 </div>
             </section>
